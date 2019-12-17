@@ -34,7 +34,6 @@ app.use((req, res) => {
 		}
 	})
 })
+let port=  process.env.PORT || 4000 
 
-
-app.listen(4000, () => console.log('Example app listening on port 4000!'))
-
+app.listen(port, () => console.log(`app listening on port ${port}`));
