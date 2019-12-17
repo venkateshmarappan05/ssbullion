@@ -22,7 +22,7 @@ mongoose.connection.once('open', () => {
     console.log('db connected')
 });
 
-app.use('', graphqlHTTP({
+app.use('/api', graphqlHTTP({
     schema: schema,
     graphiql: true
 }));
